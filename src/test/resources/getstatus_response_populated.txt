@@ -1,0 +1,14 @@
+????statusResponse
+\mod_wolfadmin\1.2.1\gamestartup\03/09/21 02:34:08\mod_url\www.etlegacy.com\mod_version\v2.77\omnibot_playing\10\P\2112112212-12\voteFlags\28814\g_balancedteams\1\g_oss\15\g_covertopsChargeTime\30000\g_soldierChargeTime\20000\g_fieldopsChargeTime\40000\g_engineerChargeTime\30000\g_medicChargeTime\45000\g_bluelimbotime\20000\g_redlimbotime\30000\gamename\legacy\cm_optimizePatchPlanes\0\g_axismaxlives\0\g_alliedmaxlives\0\g_voteFlags\0\g_minGameClients\0\g_needpass\0\mapname\battery\protocol\84\g_gametype\4\timelimit\20\sv_hostname\^7ET LEGACY ^3| ^5Official ^7Maps\sv_minRate\0\sv_maxRate\40000\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\g_friendlyFire\1\g_maxlives\0\g_antilag\1\g_heavyWeaponRestriction\100\g_maxGameClients\0\g_maxlivesRespawnPenalty\0\g_fixedphysics\1\g_fixedphysicsfps\125\g_pronedelay\0\g_playerHitBoxHeight\36\sv_maxclients\20\version\ET Legacy v2.77 linux-i386 Mar  1 2021
+159 48 "Memide 25"
+26 0 "Ryver^7"
+83 0 "Newbie^7"
+65 0 "Stinger^7"
+107 0 "Blackadder^7"
+123 0 "Sean^7"
+119 0 "Gali^7"
+55 0 "Amadi^7"
+42 0 "Cledus^7"
+59 0 "Vokur^7"
+87 0 "Chimichanga^7"
+60 80 "virusmann"

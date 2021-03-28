@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+	jcenter()
+    mavenCentral()
+}
+
+dependencies {
+	compile ('net.dv8tion:JDA:4.2.0_168') {
+		exclude module: 'opus-java'	// Exclude Audio module
+	}
+	
+	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+	implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml
+	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.12.2'
+	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl
+	compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.14.1'
+	// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+	
+	// https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+	testRuntimeOnly group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+	
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+	
+	// https://mvnrepository.com/artifact/org.mockito/mockito-core
+	testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.8.0'
+}
+
+jar {
+	archiveName("discord-wolfet.jar")
+	manifest {
+		attributes(
+				'Main-Class': 'dk.madsboddum.discordwolfet.Application'
+		)
+	}
+	
+	from(configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }) {}
+}
+
+test {
+    useJUnitPlatform()
+}
